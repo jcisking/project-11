@@ -17,7 +17,8 @@
 }
 .avatarNameShareContainer {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    
 }
 body {
     align-items: center;
@@ -30,11 +31,15 @@ body {
 .card {
     border-radius: 1rem;
     background-color: white;
+    margin: 0 1.5rem;
     max-width: 32.5rem;
 }
 .contentContainer {
     padding: 0 3.4rem 2.5rem;
     
+}
+.date {
+    color: var(--GrayishBlue);
 }
 h1 {
     color: var(--VeryDarkGrayishBlue);
@@ -51,12 +56,35 @@ h1 {
     height: 21.5rem;
     margin-bottom: 4rem;
 }
+.iconShareContainer {
+    border-radius: 50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--LightGrayishBlue);
+    width: 3.6rem;
+    margin-left: auto;
+}
+.name {
+    color: var(--VeryDarkGrayishBlue);
+    font-weight: 700;
+}
 .nameDateContainer {
     display: flex;
     flex-direction: column;
+    margin-left: 1.7rem;
 }
 p {
     color: var(--DesaturatedDarkBlue);
     line-height: 1.6;
     margin-bottom: 3rem;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 969px) {
+    body {
+        background-color: darkorchid;
+    }
+    
 }
