@@ -152,6 +152,7 @@ p {
     .card {
         display: flex;
         max-width: 73rem;
+        overflow: visible;
     }
     .contentContainer {
     }
@@ -169,5 +170,29 @@ p {
         aspect-ratio: 1/1;
         height: auto;
         margin-bottom: 0;
+    }
+    .iconShareContainer2 {
+        display: none;
+    }
+    .shareAndSocialIconContainer {
+        width: 25rem;
+        right: -4rem;
+        top: 7rem;
+        transform: translateX(0);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 63% 72%, 53% 100%, 39% 75%, 0% 75%);
+    }
+    .share .iconShare {
+    /* Making arrow white */
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1095%) hue-rotate(310deg) brightness(120%) contrast(100%);
+    }
+    .share .iconShareContainer {
+        background-color: var(--DesaturatedDarkBlue);
+    }
+    .share .avatarNameShareContainer {
+        position: static;
+        transform: translateX(0);
+    }
+    .share .shareAndSocialIconContainer {
+
     }
 }
