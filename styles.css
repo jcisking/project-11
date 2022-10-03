@@ -41,7 +41,7 @@ body {
     margin: 0 1.5rem;
     max-width: 32.5rem;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .contentContainer {
     /* padding: 0 3.4rem 2.5rem; */
@@ -152,7 +152,7 @@ p {
     .card {
         display: flex;
         max-width: 73rem;
-        overflow: visible;
+        /* overflow: visible; */
     }
     .contentContainer {
     }
@@ -171,19 +171,38 @@ p {
         height: auto;
         margin-bottom: 0;
     }
+    .iconShare {
+        transition: filter 500ms;
+    }
+    .iconShareContainer {
+        transition: background-color 500ms;
+    }
     .iconShareContainer2 {
         display: none;
     }
     .shareAndSocialIconContainer {
-        width: 25rem;
-        right: -4rem;
-        top: 7rem;
+        /* top: 85%;
+        margin-top: 2rem;
+        padding: 2rem 3.4rem;
+        position: absolute;
+        transition: transform 0s; */
         transform: translateX(0);
-        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 63% 72%, 53% 100%, 39% 75%, 0% 75%);
+        border-radius: 1rem;
+        /* padding-bottom: 4rem ; */
+        width: 25rem;
+        top: -9rem;
+        transition: opacity 500ms, top 500ms, right 500ms;
+        right: -6rem;
+        transform: translateY(0);
+        opacity: 0;
+        /* transform: translateY(-50rem); */
+        /* transition: transform 500ms; */
+        
+        clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 55% 76%, 50% 100%, 43% 75%, 0% 75%);
     }
     .share .iconShare {
     /* Making arrow white */
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1095%) hue-rotate(310deg) brightness(120%) contrast(100%);
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1095%) hue-rotate(310deg) brightness(120%) contrast(100%);
     }
     .share .iconShareContainer {
         background-color: var(--DesaturatedDarkBlue);
@@ -193,6 +212,13 @@ p {
         transform: translateX(0);
     }
     .share .shareAndSocialIconContainer {
-
+        position: absolute;
+        opacity: 1;
+        right: -7rem;
+        top: 12rem;
+        transition: opacity 1s, top 1s, right 1s ;
+        /* transform: translateY(-200%) translateX(105%); */
+        
+       
     }
 }
